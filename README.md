@@ -1,8 +1,8 @@
-# Exercise #17: Secrets CLI & API
+# Project: Secrets CLI & API
 
 [![exercise status: released](https://img.shields.io/badge/exercise%20status-released-green.svg?style=for-the-badge)](https://gophercises.com/exercises/secret)
 
-## Exercise details
+## Project details
 
 Create a package that will store secrets - things like API keys - in an encrypted file. Then create a CLI that will make it possible to set and get these secrets via the command line as well.
 
