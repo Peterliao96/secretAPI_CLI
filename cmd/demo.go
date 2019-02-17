@@ -1,6 +1,6 @@
 package main
 
-import "github.com/peterliao96/secretAPI_CLI"
+import "secret"
 
 func main(){
   v := secret.Memory("fake-key")
