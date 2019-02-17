@@ -1,10 +1,11 @@
 package main
 
-import "secret"
+import ("fmt"
+"github.com/peterliao96/secret")
 
 func main(){
   v := secret.Memory("fake-key")
-  err := v.set("demo_key", "well")
+  err := v.Set("demo_key", "well")
   if err != nil{
     panic(err)
   }

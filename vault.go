@@ -1,8 +1,8 @@
-package secrets
+package secret
 
 import (
   "errors"
-  "github.com/peterliao96/secretAPI_CLI/encrypt"
+  "github.com/peterliao96/secret/encrypt"
 )
 type Vault struct {
   encodingKey string
@@ -12,7 +12,7 @@ type Vault struct {
 func Memory(encodingKey string) Vault {
   return Vault{
     encodingKey:encodingKey,
-    keyValues: make(map[string]string)
+    keyValues: make(map[string]string),
   }
 }
 
@@ -33,6 +33,6 @@ func (v *Vault) Set(key, value string) error{
   if err != nil{
     return err
   }
-  v.keyValues[keys] = encryptedValue
+  v.keyValues[key] = encryptedValue
   return nil
 }
